@@ -1,4 +1,4 @@
-export default updateObject = (oldObject, updatedProps) => {
+export const updateObject = (oldObject, updatedProps) => {
     return {
         ...oldObject,
         ...updatedProps

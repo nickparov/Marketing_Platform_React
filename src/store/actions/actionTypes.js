@@ -1,0 +1,1 @@
+export const OBJECTS_WERE_FOUND = "OBJECTS_WERE_FOUND";
