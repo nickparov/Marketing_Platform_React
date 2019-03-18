@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/Marketing_Platform_React/static/media/banner.133a532a.jpg"
   },
   {
-    "revision": "ba5f65be6c3fa8b45b55",
-    "url": "/Marketing_Platform_React/static/js/runtime~main.ba5f65be.js"
+    "revision": "dd0a0dc3b338d014f99a",
+    "url": "/Marketing_Platform_React/static/js/runtime~main.dd0a0dc3.js"
   },
   {
     "revision": "d0a6bc83ac652fdfb505",
     "url": "/Marketing_Platform_React/static/js/main.d0a6bc83.chunk.js"
   },
   {
-    "revision": "1bca2d714c169a2b0918",
-    "url": "/Marketing_Platform_React/static/js/4.1bca2d71.chunk.js"
+    "revision": "9a4cc0f8d7eba68e2413",
+    "url": "/Marketing_Platform_React/static/js/4.9a4cc0f8.chunk.js"
   },
   {
     "revision": "9e132b5f78bc4813f14b",
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/Marketing_Platform_React/static/css/main.0fe9475a.chunk.css"
   },
   {
-    "revision": "e7e1ce9dc10be5bc24143c06dce119c2",
+    "revision": "1bb712076e8cb04aa8df07e8e1eecfc8",
     "url": "/Marketing_Platform_React/index.html"
   }
 ];
