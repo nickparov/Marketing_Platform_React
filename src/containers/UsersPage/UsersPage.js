@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 
-// Main banner for users page
+// UI
 import MainBanner from '../../components/MainBanner/MainBanner';
+import Wrapper from '../Wrapper/Wrapper';
 
 class UsersPage extends Component {
   render() {
     return (
-      <>
+      <Wrapper>
         <MainBanner />
-      </>
+      </Wrapper>
     )
   }
 }
