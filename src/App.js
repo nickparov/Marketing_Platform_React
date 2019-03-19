@@ -3,18 +3,23 @@ import { Route, Switch} from 'react-router-dom';
 
 import './assets/css/style.css';
 
+import Wrapper from './containers/Wrapper/Wrapper';
+
+const PartnersPage = lazy(() => import('./containers/PartnersPage/PartnersPage'));
 const UsersPage = lazy(() => import('./containers/UsersPage/UsersPage'));
 
 class App extends Component {
+
   render() {
     return (
-      <div className="App">
-      <Suspense fallback={<div>Loading...</div>}>
-        <Switch>
-          <Route path="/" render={() => <UsersPage/>}/>
-        </Switch>
-      </Suspense>
-      </div>
+      <Wrapper>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Switch>
+            <Route path="/partners" exact render={(props) => <PartnersPage {...props}/>}/>
+            <Route path="/" render={(props) => <UsersPage {...props}/>}/>
+          </Switch>
+        </Suspense>
+      </Wrapper>
     );
   }
 }
