@@ -18,14 +18,11 @@ class MainBanner extends Component {
 
   render() {
     let caption = null;
-    let btns = null;
 
     if(this.props.location.pathname.includes('partners')) {
       caption = "Welcome to the partners page, take a look at our rules:";
-      btns = <BannerBtns page="partners"/>;
     } else {
       caption = "Welcome to the users page!";
-      btns = <BannerBtns page="users"/>;
     }
 
     return (
@@ -36,7 +33,7 @@ class MainBanner extends Component {
                         <div className="home-text-center text-center feature-box-02">
                             <h1 className="font-alt">Company</h1>
                             <h3>{ caption }</h3>
-                            { btns }
+                            <BannerBtns page={this.props.location.pathname.includes('partners') ? "partners" : "users"}/>
                         </div>
                     </Col>
                 </Row>

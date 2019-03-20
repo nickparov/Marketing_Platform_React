@@ -7,7 +7,7 @@ export default function BannerBtns(props) {
   if(props.page == 'users') {
     buttons = (
         <Link 
-            to='/search' exact
+            to='/search'
             className="btn btn-theme">
                 Search
         </Link>
@@ -16,12 +16,12 @@ export default function BannerBtns(props) {
     buttons = (
       <>
         <Link 
-            to='/rules' exact
+            to='/rules'
             className="btn btn-theme">
                 Rules
         </Link>
         <Link 
-            to='/login' exact
+            to='/login'
             className="btn btn-theme">
                 Login
         </Link>

@@ -13,8 +13,21 @@ import { NavLink } from 'react-router-dom';
 
 class Navigation extends Component {
 
+    componentDidMount() {
+      window.addEventListener('scroll', this.handleScroll);
+    }
+
+    componentWillUnmount() {
+      window.removeEventListener('scroll', this.handleScroll);
+    }
+  
+    handleScroll = () => {
+      this.setState({windowScroll: window.scrollY})
+    }
+
     state = {
-        isOpen: false
+      isOpen: false,
+      windowScroll: null
     };
 
     toggle = () => {
@@ -24,8 +37,15 @@ class Navigation extends Component {
     }
 
     render() {
+
+    let classes = ['fixed-top header-nav'];
+    
+    if(this.state.windowScroll > 60) {
+      classes.push('fixed-header');
+    }
+
     return (
-        <Navbar expand="lg" className="fixed-top header-nav">
+        <Navbar expand="lg" className={classes.join(' ')}>
             <Container>
                 <NavbarBrand href="/" className="navbar-brand">Untitled  <span className="theme-bg"></span> </NavbarBrand>
                 <NavbarToggler onClick={this.toggle}>
@@ -55,7 +75,7 @@ class Navigation extends Component {
                 </Collapse>
             </Container>
         </Navbar>
-    )
+    );
   }  
   
   
