@@ -8,6 +8,11 @@ html body .select-animation{
   transition: all 0.3s ease;
 }
 
+html body .select-animation a {
+  text-decoration: none;
+  color: #212529;
+}
+
 html body .select-animation:hover{
   transform: translateY(-20px);
   cursor: pointer;

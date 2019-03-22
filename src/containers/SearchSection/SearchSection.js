@@ -1,8 +1,9 @@
 import React from 'react';
 
 import Btn from '../../components/UI/Btn/Btn';
+import PopularObjectList from '../PopularObjectList/PopularObjectList';
 
-export default function SearchSection() {
+const SearchSection = () => {
   return (
     <section id="services" className="section gray-bg">
       <div className="container">
@@ -33,57 +34,11 @@ export default function SearchSection() {
 
           </div>
         </div> 
-    <div id="hide_on_search">
-        
-        <div className="row mt-2">
-
-                      <div className="col-4 mx-auto select-animation">
-              <a href="objects/view/1" style="text-decoration: none; color: #212529;">
-                <div className="team-box">
-                  <div className="team-img">
-                    <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX21584383.jpg" title="" alt="" />
-                  </div>
-                  <div className="team-info">
-                    <h4 className="font-alt">Turkey</h4>
-                    <span>Sadochok</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-                      <div className="col-4 mx-auto select-animation">
-              <a href="objects/view/2" style="text-decoration: none; color: #212529;">
-                <div className="team-box">
-                  <div className="team-img">
-                    <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX21584383.jpg" title="" alt="" />
-                  </div>
-                  <div className="team-info">
-                    <h4 className="font-alt">Ukraine</h4>
-                    <span>Netflix</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-                      <div className="col-4 mx-auto select-animation">
-              <a href="objects/view/3" style="text-decoration: none; color: #212529;">
-                <div className="team-box">
-                  <div className="team-img">
-                    <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX21584383.jpg" title="" alt="" />
-                  </div>
-                  <div className="team-info">
-                    <h4 className="font-alt">France</h4>
-                    <span>Servelat</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-                     
-          </div>
-            <div className="text-center">
-              <p className="font-alt-custom-heading cstm-background"><i className="flash_animation fas fa-exclamation"></i> Most Popular Objects <i className="flash_animation fas fa-exclamation"></i></p>
-            </div>  
-          
-        </div> 
+      <PopularObjectList />
       </div>
     </section>
   )
 }
+
+
+export default SearchSection;
