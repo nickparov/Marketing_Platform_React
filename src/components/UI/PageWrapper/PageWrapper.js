@@ -7,10 +7,6 @@ import MainBanner from '../../MainBanner/MainBanner';
 import Footer from '../../Footer/Footer';
 
 class PageWrapper extends Component {
-
-    componentDidMount = () => {
-      console.log(this.props);
-    }
     
 
     render() {
