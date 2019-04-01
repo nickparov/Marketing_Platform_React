@@ -33,7 +33,7 @@ class AboutSection extends Component {
               </div> 
             </Col>
             <Col md='6'>
-              <img src={image} title="image" alt="image" />
+              <img src={image} alt=''/>
             </Col>
           </Row>
           <FeatureBox />

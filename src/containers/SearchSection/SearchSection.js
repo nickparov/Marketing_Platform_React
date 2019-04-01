@@ -22,7 +22,33 @@ class SearchSection extends Component {
   }
 
   updateSelectedOptions(name, value) {
-    // add update options functionality
+    let updatedSelectedOptions = {};
+    const oldSelectedOptions = { ...this.state.SelectedOptions };
+    
+    switch(name) {
+      case 'countryId': 
+        updatedSelectedOptions = {[name]: value};
+      break;
+      case 'cityId':
+        updatedSelectedOptions = {
+          ...oldSelectedOptions,
+          'city_id': value
+        }
+
+        delete updatedSelectedOptions.instId;
+      break;  
+      case 'instId':
+        updatedSelectedOptions= {
+          ...oldSelectedOptions,
+          [name]: value
+        }
+      break;
+      default: 
+
+      break;
+    }
+
+    return updatedSelectedOptions;
   }
 
   componentDidMount = () => {

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function BannerBtns(props) {
   
   let buttons = null;
-  if(props.page == 'users') {
+  if(props.page === 'users') {
     buttons = (
         <Link 
             to='/search'
